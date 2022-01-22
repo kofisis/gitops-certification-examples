@@ -1,0 +1,9 @@
+
+
+argocd app create appName \
+--project default \
+--repo https://github.com/xxxxxxxx \
+--path ./path/file/myfile.yaml \
+--sync-policy auto \
+--dest-namespace default \
+--dest-server https://kubernetes.default.svc
